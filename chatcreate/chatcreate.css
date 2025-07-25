@@ -135,9 +135,9 @@ footer {
     /* 間隔合わせ */
     justify-content: space-around;
 
-
     /*←絶対位置(下)*/
     position: absolute;
+
     /*下に固定*/
     bottom: 0;
 

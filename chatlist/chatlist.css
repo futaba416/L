@@ -1,18 +1,29 @@
 html,
 body {
+
+    /* ブラウザによって表示されるデザインが違うので初期設定で余白を0にする */
     margin: 0;
     padding: 0;
+
+    /*Arialがインストールされていない時にsans-serif（ゴシック体）で表示する*/
     font-family: Arial, sans-serif;
     background-color: rgb(255, 245, 228);
 }
 
+
+/* ヘッダー */
 header {
+
     color: white;
     width: 100%;
     height: 120px;
     background-color: rgb(255, 148, 148);
     display: flex;
+
+    /* 「チャット作成」を中心に配置 */
     justify-content: center;
+
+    /* 矢印マークがチャット作成と同じ高さで配置される */
     align-items: center;
 
 }
@@ -22,14 +33,22 @@ h1 {
     font-size: 18px;
 }
 
-/*aを使うことでボックスを真ん中にできた！*/
-.a {
+/* ヘッダーEND */
+
+
+
+/* メイン */
+/*ボックスを中央*/
+.list {
     display: flex;
     justify-content: center;
+    /* 文字したの線除去 */
+    text-decoration: none;
 }
 
-/*他の設定はｈ3できた！*/
+/*ボックス内の表示*/
 h3 {
+
     padding: 16px;
     height: 43px;
     border: 1px solid rgb(255, 148, 148);
@@ -40,8 +59,11 @@ h3 {
     font-size: 14px;
 }
 
+/* メインEND */
 
-/* */
+
+
+/* フッター */
 footer {
     padding: 16px;
     color: white;
@@ -49,11 +71,17 @@ footer {
     width: 100%;
     height: 110px;
     background-color: rgb(255, 148, 148);
+
+    /* 横に画像3つ、各画像下にテキストを表示する配置設定 */
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    /*←絶対位置*/
+
+    /* 間隔合わせ */
+    justify-content: space-around;
+
+    /*←絶対位置(下)*/
     position: absolute;
+
     /*下に固定*/
     bottom: 0;
 
@@ -61,6 +89,7 @@ footer {
 
 .footer_item {
 
+    /* 横に画像3つ、各画像下にテキストを表示する配置設定 */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,10 +97,17 @@ footer {
 }
 
 .footerbutton {
+
+    /* 文字したの線除去 */
     text-decoration: none;
+
 }
 
 .footerimage {
+
     height: 60px;
     width: 60px;
 }
+
+
+/* フッターEND */
